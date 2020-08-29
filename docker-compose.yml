@@ -1,0 +1,16 @@
+version: '3.6'
+services:
+  rabbitmq:
+    image: rabbitmq:management
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+
+  huffman-service:
+    image: 04110000/huffman-encoding:latest
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_USER=guest
+      - RABBITMQ_PASSWORD=guest
+    links:
+      - rabbitmq

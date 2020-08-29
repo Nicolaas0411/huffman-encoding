@@ -30,7 +30,7 @@ class Assessment:
         return self.encodedStringDictionary
 
     @rpc
-    def decode(self, encodedString):
+    def decodeEncodedString(self, encodedString):
         for key, value in self.encodedStringDictionary.items():
             if value == encodedString:
                 return key
