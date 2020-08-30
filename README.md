@@ -7,8 +7,12 @@
 
 ### How to run
 
-### In the root directory of the project run the following in your terminal:
 
+
+### In the root directory of the project run the following in your terminal:
+```sh
+$ docker build -t 04110000/huffman-encoding:latest .    
+```
 ```sh
 $ docker-compose up
 ```
