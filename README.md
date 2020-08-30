@@ -33,5 +33,5 @@ $ nameko shell
 ```
 
 ```sh
->>> n.rpc.engineering_assessment.decode(encodedString="1000111110000011011110110")
+>>> n.rpc.engineering_assessment.decodeEncodedString(encodedString="1000111110000011011110110")
 ```
